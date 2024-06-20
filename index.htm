@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+        <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand shadow fixed-top  navbar-light bg-light">
+        <div class="container">
+            <a href="index.htm" class="navbar-brand text-secondary">
+                <b>TS EAMCET Analyzer</b>
+            </a>
+            <div class="navbar-collapse collapse" id="nav">
+                
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="desc">
+        <div id="des1">Start selecting your college easy way. Select your desired branch and we will provide you with top colleges that you can join into.</div>
+        <div id="des2"><img src="image.jpeg" alt="" class="img-fluid"></div>
+    </div>
+    <div class="container" id="RANK">
+        <label id="rankname" for="rank">Rank</label>
+        <input type="number" id="rank" name="RANK" placeholder="Enter the rank" class="form-control" required>
+    </div>
+    <div class="container">
+        <h6  id="label">Caste</h6>
+    </div>
+    <div class="container" id="castt">
+        <input type="radio" id="ANY" name="caste" onchange="demo(value)" class="form-check-input" value="29" >
+        <label class="form-check-label" for="ANY" class="form-check-label">ANY</label>
+        <input type="radio" id="OC_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="9">
+        <label class="form-check-label" for="OC_BOYS">OC BOYS</label>
+        <input type="radio" id="OC_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="10">
+        <label class="form-check-label" for="OC_GIRLS">OC GIRLS</label>
+        <input type="radio" id="BC_A_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="11">
+        <label class="form-check-label" for="BC_A_BOYS">BC A BOYS</label>
+        <input type="radio" id="BC_A_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="12">
+        <label class="form-check-label" for="BC_A_GIRLS">BC A GIRLS</label>
+        <input type="radio" id="BC_B_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="13">
+        <label class="form-check-label" for="BC_B_BOYS">BC B BOYS</label>
+        <input type="radio" id="BC_B_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="14">
+        <label class="form-check-label" for="BC_B_GIRLS">BC B GIRLS</label>
+        <input type="radio" id="BC_C_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="15">
+        <label class="form-check-label" for="BC_C_BOYS">BC C BOYS</label>
+        <input type="radio" id="BC_C_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="16">
+        <label class="form-check-label" for="BC_C_GIRLS">BC C GIRLS</label>
+        <input type="radio" id="BC_D_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="17">
+        <label class="form-check-label" for="BC_D_BOYS">BC D BOYS</label>
+        <input type="radio" id="BC_D_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="18">
+        <label class="form-check-label" for="BC_D_GIRLS">BC D GIRLS</label>
+        <input type="radio" id="BC_E_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="19">
+        <label class="form-check-label" for="BC_E_BOYS">BC E BOYS</label>
+        <input type="radio" id="BC_E_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="20">
+        <label class="form-check-label" for="BC_E_GIRLS">BC E GIRLS</label>
+        <input type="radio" id="SC_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="21">
+        <label class="form-check-label" for="SC_BOYS">SC BOYS</label>
+        <input type="radio" id="SC_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="22">
+        <label class="form-check-label" for="SC_GIRLS">SC GIRLS</label>
+        <input type="radio" id="ST_BOYS" name="caste" onchange="demo(value)" class="form-check-input" value="23">
+        <label class="form-check-label" for="ST_BOYS">ST BOYS</label>
+        <input type="radio" id="ST_GIRLS" name="caste" onchange="demo(value)" class="form-check-input" value="24">
+        <label class="form-check-label" for="ST_GIRLS">ST GIRLS</label>
+        <input type="radio" id="EWS_GEN_OU" name="caste" onchange="demo(value)" class="form-check-input" value="25">
+        <label class="form-check-label" for="EWS_GEN_OU">EWS GEN OU</label>
+        <input type="radio" id="EWS_GIRLS_OU" name="caste" onchange="demo(value)" class="form-check-input" value="26">
+        <label class="form-check-label" for="EWS_GIRLS_OU">EWS GIRLS OU</label>
+        
+    </div>
+    <div class="container">
+        <h6  id="label">Branch</h6>
+    </div>
+    <div class="container">
+        <input type="checkbox" id="ANE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ANE">ANE</label>
+        <input type="checkbox" id="ARB" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ARB">ARB</label>
+        <input type="checkbox" id="AUT" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="AUT">AUT</label>
+        <input type="checkbox" id="BSE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="BSE">BSE</label>
+        <input type="checkbox" id="CIV" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CIV">CIV</label>
+        <input type="checkbox" id="IPE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="IPE">IPE</label>
+        <input type="checkbox" id="MCT" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MCT">MCT</label>
+        <input type="checkbox" id="MEC" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MEC">MEC</label>
+        <input type="checkbox" id="MET" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MET">MET</label>
+        <input type="checkbox" id="MMS" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MMS">MMS</label>
+        <input type="checkbox" id="MTE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MTE">MTE</label>
+        <input type="checkbox" id="PLG" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PLG">PLG</label>
+        <input type="checkbox" id="AGR" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="AGR">AGR</label>
+        <input type="checkbox" id="BIO" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="BIO">BIO</label>
+        <input type="checkbox" id="CHE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CHE">CHE</label>
+        <input type="checkbox" id="DRG" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="DRG">DRG</label>
+        <input type="checkbox" id="FDT" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="FDT">FDT</label>
+        <input type="checkbox" id="GEO" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="GEO">GEO</label>
+        <input type="checkbox" id="MIN" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MIN">MIN</label>
+        <input type="checkbox" id="MMT" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MMT">MMT</label>
+        <input type="checkbox" id="PHE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PHE">PHE</label>
+        <input type="checkbox" id="TEX" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="TEX">TEX</label>
+        <input type="checkbox" id="CME" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CME">CME</label>
+        <input type="checkbox" id="CSA" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSA">CSA</label>
+        <input type="checkbox" id="CSG" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSG">CSG</label>
+        <input type="checkbox" id="CSN" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSN">CSN</label>
+        <input type="checkbox" id="CSO" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSO">CSO</label>
+        <input type="checkbox" id="CST" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CST">CST</label>
+        <input type="checkbox" id="CSW" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSW">CSW</label>
+        <input type="checkbox" id="DTD" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="DTD">DTD</label>
+        <input type="checkbox" id="INF" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="INF">INF</label>
+        <input type="checkbox" id="ITE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ITE">ITE</label>
+        <input type="checkbox" id="AI" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="AI">AI</label>
+        <input type="checkbox" id="AID" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="AID">AID</label>
+        <input type="checkbox" id="AIM" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="AIM">AIM</label>
+        <input type="checkbox" id="CIC" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CIC">CIC</label>
+        <input type="checkbox" id="CS" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CS">CS</label>
+        <input type="checkbox" id="CSB" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSB">CSB</label>
+        <input type="checkbox" id="CSC" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSC">CSC</label>
+        <input type="checkbox" id="CSD" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSD">CSD</label>
+        <input type="checkbox" id="CSE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSE">CSE</label>
+        <input type="checkbox" id="CSI" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSI">CSI</label>
+        <input type="checkbox" id="CSM" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CSM">CSM</label>
+        <input type="checkbox" id="BME" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="BME">BME</label>
+        <input type="checkbox" id="ECA" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ECA">ECA</label>
+        <input type="checkbox" id="ECE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ECE">ECE</label>
+        <input type="checkbox" id="ECI" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ECI">ECI</label>
+        <input type="checkbox" id="ECM" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ECM">ECM</label>
+        <input type="checkbox" id="EEE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="EEE">EEE</label>
+        <input type="checkbox" id="EIE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="EIE">EIE</label>
+        <input type="checkbox" id="ETE" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ETE">ETE</label>
+        <input type="checkbox" id="ETM" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ETM">ETM</label>
+        <input type="checkbox" id="PHD" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PHD">PHD</label>
+        <input type="checkbox" id="PHM" name="BRANCH" onchange="demo1(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PHM">PHM</label>
+    </div>
+    <div class="container">
+        <h6  id="label">District</h6>
+    </div>
+    <div class="container">
+        <input type="checkbox" id="HYD" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="HYD">HYD</label>
+        <input type="checkbox" id="MDL" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MDL">MDL</label>
+        <input type="checkbox" id="RR" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="RR">RR</label>
+        <input type="checkbox" id="MNC" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MNC">MNC</label>
+        <input type="checkbox" id="KGM" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="KGM">KGM</label>
+        <input type="checkbox" id="SRP" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SRP">SRP</label>
+        <input type="checkbox" id="WGL" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="WGL">WGL</label>
+        <input type="checkbox" id="KHM" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="KHM">KHM</label>
+        <input type="checkbox" id="MED" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MED">MED</label>
+        <input type="checkbox" id="SRD" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SRD">SRD</label>
+        <input type="checkbox" id="KMR" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="KMR">KMR</label>
+        <input type="checkbox" id="NZB" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="NZB">NZB</label>
+        <input type="checkbox" id="KRM" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="KRM">KRM</label>
+        <input type="checkbox" id="JGN" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="JGN">JGN</label>
+        <input type="checkbox" id="MBN" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MBN">MBN</label>
+        <input type="checkbox" id="SDP" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SDP">SDP</label>
+        <input type="checkbox" id="JTL" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="JTL">JTL</label>
+        <input type="checkbox" id="MHB" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MHB">MHB</label>
+        <input type="checkbox" id="PDL" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PDL">PDL</label>
+        <input type="checkbox" id="SRC" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SRC">SRC</label>
+        <input type="checkbox" id="WNP" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="WNP">WNP</label>
+        <input type="checkbox" id="HNK" name="DIST" onchange="demo2(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="HNK">HNK</label>
+    </div>
+    <div class="container">
+        <h6  id="label">Type</h6>
+    </div>
+    <div class="container">
+        <input type="checkbox" id="PVT" name="TYPE" onchange="demo3(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PVT">PVT</label>
+        <input type="checkbox" id="UNIV" name="TYPE" onchange="demo3(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="UNIV">UNIV</label> 
+        <input type="checkbox" id="PVTSF" name="TYPE" onchange="demo3(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PVTSF">PVTSF</label>
+        <input type="checkbox" id="SF" name="TYPE" onchange="demo3(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SF">SF</label>
+        <input type="checkbox" id="GOV" name="TYPE" onchange="demo3(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="GOV">GOV</label>
+    </div>
+    <div class="container">
+        <h6  id="label">Affiliated</h6>
+    </div>
+    <div class="container" id="aff">
+        <input type="checkbox" id="JNTUH" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="JNTUH">JNTUH</label>
+        <input type="checkbox" id="OU" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="OU">OU</label>
+        <input type="checkbox" id="PJTSAU" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PJTSAU">PJTSAU</label>
+        <input type="checkbox" id="PVNRTVU" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="PVNRTVU">PVNRTVU</label>
+        <input type="checkbox" id="ANURAG UNIVERSITY" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="ANURAG UNIVERSITY">ANURAG UNIVERSITY</label>
+        <input type="checkbox" id="CONSTITUENT COLLEGE" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="CONSTITUENT COLLEGE">CONSTITUENT COLLEGE</label>
+        <input type="checkbox" id="MGUN" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="MGUN">MGUN</label>
+        <input type="checkbox" id="KU" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="KU">KU</label>
+        <input type="checkbox" id="SR UNIVERSITY" name="AFFILIATED" onchange="demo4(this.id)" class="form-check-input" >
+        <label class="form-check-label" for="SR UNIVERSITY">SR UNIVERSITY</label>
+    </div>
+          
+    <div class="container" id="btn"><button class="btn btn-primary" type="submit" onclick="fetchdata()">SUBMIT</button></div>
+    <div class="container" id="load">
+        <div id="loadingIndicator" style="display: none;"></div>
+    </div>
+    <div class="container-fluid" id="tab">
+        <table class="table table-hover table-secondary table-striped shadow" id="table" >
+        </table>
+    </div>
+    <script src="demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
